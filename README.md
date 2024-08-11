@@ -3,3 +3,5 @@
 
 生成迁移文件
 ` migrate create -ext sql -dir migrations init`
+生成到数据库
+`migrate -verbose -path="./platform/migrations" -database "postgres://postgres:password@localhost/postgres?sslmode=disable" up`
